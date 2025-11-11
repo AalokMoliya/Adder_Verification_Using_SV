@@ -1,0 +1,52 @@
+
+# vsim -batch -lib qrun.out/work -do " run -all; exit" -statslog qrun.out/stats_log qrun_opt -appendlog -l qrun.log 
+# Start time: 13:39:04 on Nov 11,2025
+# //  Questa Sim-64
+# //  Version 2024.3_1 linux_x86_64 Oct 17 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.design_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.add_if(fast__2)
+# Loading work.adder(fast)
+# Loading work.pg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'iop1'. The port definition is at: design.sv(3).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: design.sv Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'iop2'. The port definition is at: design.sv(3).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: design.sv Line: 26
+# Loading work.add_if(fast)
+# 
+# run -all
+# incorrect in1= x, in2= x, op= x
+# correct in1= 0, in2= 5, op= 5
+# correct in1= 0, in2= 3, op= 3
+# correct in1= 3, in2= 9, op=12
+# correct in1= 9, in2= 0, op= 9
+# correct in1= 5, in2= 5, op=10
+# correct in1=13, in2= 1, op=14
+# correct in1= 3, in2= 7, op=10
+# correct in1= 1, in2=10, op=11
+# correct in1= 3, in2= 5, op= 8
+# ** Note: $finish    : testbench.sv(151)
+#    Time: 200 ns  Iteration: 1  Instance: /top/p
+# End time: 13:39:05 on Nov 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+End time: 13:39:05 on Nov 11,2025, Elapsed time: 0:00:02
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   1
+    vopt: Errors:   0, Warnings:   2
+    vsim: Errors:   0, Warnings:   2
+  Totals: Errors:   0, Warnings:   5
+Done
